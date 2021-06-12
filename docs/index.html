@@ -7,13 +7,30 @@
   <meta name="description" content="总之就是随便描述一下">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="./_media/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./favicon.ico" type="image/ico">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="cover-gap"></div>
+  </div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'Cccatmint Blog',
+      repo: 'https://gitee.com/cccatmint/docs',
+      relativePath: true, // 启用相对路径
+      coverpage: true,
+      logo: '/_media/icon.svg',
+      themeColor: '#1296DB',
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      routerMode: 'hash',
+      notFoundPage: './_media/404.md',
+      loadSidebar: true, // 加载侧边栏 _sidebar.md
+      subMaxLevel: 5,
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    }
     }
   </script>
   <!-- Docsify v4 -->
