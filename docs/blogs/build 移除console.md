@@ -7,13 +7,31 @@
 babel.config.js
 
 ```js
-module.exports = {
-  plugins: [
-    // babel-plugin-transform-remove-console
-    // 在build 命令后移除console
-   // babel-plugin-transform-remove-console
-    // 在build 命令后移除console
-    ['transform-remove-console', { exclude: ['error', 'warn'] }]
+// 发布阶段需要使用的babel 插件
+const prodPlugins = []
+
+if (process.env.NODE_ENV === 'production') {
+  // 处于发布模式 build
+  // npm install babel-plugin-transform-remove-console --dev--save
+  // 在build 命令后移除 console
+  const removeConsolePlugin = ['transform-remove-console', { exclude: ['error', 'warn'] }]
+  prodPlugins.push(removeConsolePlugin)
+} else {
+  // 不处于发布模式 build
 }
+
+module.exports = {
+  presets: [
+    '@vue/cli-plugin-babel/preset'
+  ],
+  plugins: [
+    [
+       // 其他插件
+    ],
+    // 引入发布阶段需要使用的babel 插件
+    ...prodPlugins
+  ]
+}
+
 ```
 
