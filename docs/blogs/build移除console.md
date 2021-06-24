@@ -4,7 +4,7 @@
 
 
 
-babel.config.js
+* babel.config.js 文件内容
 
 ```js
 // 发布阶段需要使用的babel 插件
