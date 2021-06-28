@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">click here to build a request!</button>
+</body>
+<script>
+  const getData = () => {
+
+    fetch('http://localhost:7777/api/constellation/getAll?consName=%E7%8B%AE%E5%AD%90%E5%BA%A7&type=today&key=0ac3681d7f0b5891db9279534193b815')
+    .then(response => {
+      return response.json() // json() 方法接收一个 Response 流，并将其读取完成,返回一个 Promise
+    })
+    .then(myJson => {
+      console.log(myJson)
+    })
+  }
+
+  const btn = document.querySelector('#btn')
+  btn.addEventListener('click', getData)
+  
+  
+</script>
+</html>
