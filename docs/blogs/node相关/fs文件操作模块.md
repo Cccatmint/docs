@@ -98,6 +98,8 @@ fs.unlink('./logs/toremove.txt', err => {
 
 ### 2.4 读取操作
 
+#### 2.4.1 异步读取
+
 `fs.readFile`
 
 下面content 读取内容为Buffer 格式
@@ -107,13 +109,68 @@ fs.unlink('./logs/toremove.txt', err => {
 ```js
 const fs = require('fs')
 
-fs.readFile('./logs/test.log', 'utf-8', (err, content) => {
-  if (err) throw err
+// 异步读取文件：方法一
+fs.readFile('./logs/log-0.txt', 'utf-8', (err, content) => {
   console.log(content)
+  console.log(0)
 })
-// 或者用下面的
-fs.readFile('./logs/test.log', (err, content) => {
-  if (err) throw err
-  console.log(content.toString())
+console.log(1)
+
+// 异步读取文件：方法二
+fs.readFile('./logs/log-0.txt', 'utf-8').then(result => {
+  console.log(result)
+})
+
+// 异步读取文件：方法三
+function getFile() {
+  return new Promise((resolve) => {
+    fs.readFile('./logs/log-0.txt', 'utf-8', (err, data) => {
+      resolve(data)
+    })
+  })
+}
+
+;(async () => {
+  console.log(await getFile())
+})()
+
+// 异步读取文件：方法四
+const fsp = fsP.readFile('./logs/log-1.txt', 'utf-8').then((result) => {
+  console.log(result)
+})
+
+console.log(fsP)
+```
+
+#### 2.4.2 同步读取
+
+```js
+const fs = require('fs')
+
+try {
+  const content = fs.readFileSync('./logs/log-1.txt', 'utf-8')
+  console.log(content)
+  console.log(0)
+} catch (e) {
+  console.log(e.message)
+}
+
+console.log(1)
+
+```
+
+
+
+
+
+
+
+### 2.5 watch 监听文件变化
+
+```js
+const fs = require('fs')
+
+fs.watch('./logs/log-0.txt', () => {
+  console.log('file changed.')
 })
 ```
