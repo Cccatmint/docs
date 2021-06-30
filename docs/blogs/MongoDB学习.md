@@ -199,6 +199,14 @@ module.exports = {
 
 ##### 3.使用 model 进行增(2种)、查、改、删
 
+
+
+> https://www.cnblogs.com/w-jinfeng/articles/4772514.html
+>
+> https://segmentfault.com/a/1190000021010300
+>
+> 这篇文章有很多其他方法
+
 创建`test1.js`用于演示增(2种)、查
 
 ```javascript
