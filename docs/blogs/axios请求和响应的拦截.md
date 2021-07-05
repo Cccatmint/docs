@@ -1,5 +1,7 @@
 
 
+## 直接使用的方法
+
 需要在生命周期钩子中写
 
 这里是写在setup()中
@@ -64,5 +66,26 @@ export default {
 }
 </script>
 
+```
+
+## 创建axios实例后使用
+
+```js
+import axios from 'axios'
+const token  = window.sessionStorage.getItem('token')
+
+const myaxios = axios.create({
+	baseURL: 'https://some-domain.com/api/',
+  	timeout: 1000,
+  	headers: {'X-Custom-Header': 'foobar'}
+})
+
+myaxios.interceptor.request.use(function(config) {
+    // 常见用法之一是添加token
+    config.headers.Authorization = token
+    return config
+}, function(error) {
+    return Promise.reject(error)
+})
 ```
 
