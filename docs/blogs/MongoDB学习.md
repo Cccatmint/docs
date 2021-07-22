@@ -277,3 +277,35 @@ console.log('ok 成功引入model')
 })()
 ```
 
+4. 使用model进行分页查询
+
+```js
+// 获取文档分类列表
+/**
+ * 
+ * @param { String } query 查询字符串，在modelName中进行匹配查询
+ * @param { String | Number } pagenum 当前页
+ * @param { String | Number } pagesize 每页大小
+ * @returns
+ */
+const getDocModelList = async (query, pagenum, pagesize) => {
+  let docModelList = []
+  let total = 0
+  if (query === '') {
+    docModelList = await DocModel.find({}).skip((pagenum - 1) * pagesize).limit(parseInt(pagesize)||20).sort({'updatedAt':-1})
+    total = await DocModel.count({})
+  } else {
+    docModelList = await DocModel.find({ modelName: {$regex: eval(`/${query}/ig`)}}).skip((pagenum - 1) * pagesize).limit(parseInt(pagesize)||20).sort({'updatedAt':-1})
+    total = await DocModel.count({ modelName: {$regex: eval(`/${query}/ig`)}})
+  }
+  const totalPage = docModelList.length % pagesize === 0 ? docModelList.length / pagesize : (Math.floor(docModelList.length / pagesize) + 1)
+  const result = {
+    totalPage,
+    pagenum,
+    total,
+    docModelList
+  }
+  return result
+}
+```
+
