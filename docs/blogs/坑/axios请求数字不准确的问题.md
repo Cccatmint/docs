@@ -78,7 +78,7 @@ const myAxios = axios.create({
 	try {
         return JSONbig.parse(data)
     } catch () {
- 		return data       
+        return data       
     }
 	}]
 })
