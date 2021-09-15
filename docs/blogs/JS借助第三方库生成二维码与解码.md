@@ -20,13 +20,29 @@ import QRCode from 'qrcode' // https://www.npmjs.com/package/qrcode
 import jsQR from 'jsqr' // https://www.npmjs.com/package/jsqr
 import Jimp from 'jimp' // https://www.npmjs.com/package/jimp
 
-// 生成
 const generateQR = async text => {
   try {
     return await QRCode.toDataURL(text)
   } catch (err) {
     console.error(err)
   }
+}
+
+// translate string to qrcode and download
+const getQRImageFile = async (text, fileName) => {
+  // uri -> download file
+  // https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#attr-download
+  const downloadURI = (url, fileName) => {
+    let link = document.createElement('a')
+    link.download = fileName
+    link.href = url
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    link = null
+  }
+  const dataUrl = await QRCode.toDataURL(text)
+  downloadURI(dataUrl, fileName)
 }
 
 // file -> buffer
@@ -39,21 +55,21 @@ const fileToBuffer = file => {
     reader.readAsArrayBuffer(file)
   })
 }
-// 解码
+
 const decodeQR = async (file) => {
   const buffer = await fileToBuffer(file)
   const imageData = await Jimp.read(buffer)
   const uint8Array = imageData.bitmap.data
   const qrResult = jsQR(uint8Array, imageData.bitmap.width, imageData.bitmap.height)
   return qrResult
-    // get result from qrResult.data
+    // get data from qrResult.data
 }
 
 export {
   generateQR,
-  decodeQR
+  decodeQR,
+  getQRImageFile
 }
-
 ```
 
 
