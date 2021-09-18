@@ -1,0 +1,30 @@
+.sidebar-nav {
+}
+.sidebar-nav>ul>li a {
+  position: relative;
+}
+
+.sidebar-nav>ul>li::before,
+.sidebar-nav>ul>li>a::before {
+  /* position: absolute; */
+  top: 12px;
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  text-align: center;
+  width: 3px;
+  margin-right: 12px;
+  background-color: #42B983;
+}
+
+.sidebar-nav>ul>li:first-child::before {
+  display: none;
+}
+
+.sidebar-nav>ul>li ul {
+  background-color: #fff;
+}
+
+.sidebar-nav {
+}
