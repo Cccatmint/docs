@@ -1,6 +1,6 @@
 - [首页](/_home)
 -   后端相关
-  - [登陆实现方案与实践基于session或者cookie](/docs/后端相关/登陆实现方案与实践基于session或者cookie.md)
+  - [登陆实现方案与实践基于session或者cookie](/docs/后端相关/登陆实现方案与实践基于session或者cookie)
   - [JsonWebToken的使用](/docs/后端相关/JsonWebToken的使用)
   - [koa2后端生成图片验证码](/docs/后端相关/koa2后端生成图片验证码)
   - [koa2框架上传文件koa-body中间件的使用](/docs/后端相关/koa2框架上传文件koa-body中间件的使用)
