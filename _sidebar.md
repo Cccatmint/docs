@@ -20,6 +20,9 @@
 - NodeJs相关
   - [crypto加密](/docs/NodeJs相关/crypto加密)
   - [fs文件操作模块](/docs/NodeJs相关/fs文件操作模块)
+
+- JS相关
+  - [call_apply_bind改变this指向](/docs/JS相关/call_apply_bind改变this指向)
 - Vue相关
   - [vue3异步组件加载](/docs/Vue相关/vue3异步组件加载)
   - [compositionAPI](/docs/Vue相关/compositionAPI)
