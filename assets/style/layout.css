@@ -48,3 +48,20 @@
 #title a p {
   color: #b6b5b5 !important;
 }
+
+.beian {
+  height: 40px;
+  font-size: 16px;
+  /* background-color: #f00; */
+  border-top: 1px solid #ccc;
+  color: #ccc;
+  text-align: end;
+}
+.beian a,
+.beian a:link,
+.beian a:visited,
+.beian a:hover 
+.beian a:active {
+  color: #ccc;
+  text-decoration: none;
+}
