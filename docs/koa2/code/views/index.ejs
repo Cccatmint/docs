@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .exitem_title {
+            background-color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+    <title>views/index.ejs</title>
+    
+</head>
+<body>
+    该页面由ejs模板引擎渲染 from html
+
+    <div class="exitem_title">公共数据</div>
+    <%=userInfo.name%>
+    <%- include('h.ejs')%>
+</body>
+</html>

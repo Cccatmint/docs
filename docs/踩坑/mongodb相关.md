@@ -14,3 +14,17 @@ const getData = async () => {
 }
 ```
 
+
+
+
+
+## ObjectId相关
+
+在聚合管道查询中_id需要使用mongoose.Types.ObjectId()进行转化
+
+```
+$match: {
+	_id: mongoose.Types.ObjectId('xxxaf1as3f1asf35as1xxx')
+}
+```
+
