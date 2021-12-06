@@ -17,6 +17,7 @@
     <% include ../comment/header.html %>
     <h3><%= title %></h3>
     <time><%= time %></time>
+    <div><%= staticString %></div>
 
     <p>内容概览</p>
     <ul>
@@ -84,8 +85,8 @@
             })
         }
 
-        function getSession () {
-            fetch('/session_getmail', {
+         async function getSession () {
+            const result = await fetch('/session_getmail', {
                 method: 'post',
                 headers: {
                     "Content-type": "application/json"

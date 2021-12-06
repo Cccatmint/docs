@@ -6,7 +6,8 @@ class EjsController extends Controller {
 
         const renderData = {
             title: 'Web 性能优化：控制关键请求的优先级',
-            time: '2021-12-03 18:30',
+            time: this.app.currentTime(), // 自定义的application扩展方法,
+            staticString: this.app.staticString, // 自定义的application扩展属性
             content: [
                 '什么是资产优先级？',
                 'Chrome 如何安排资源优先级？',

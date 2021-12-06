@@ -70,3 +70,20 @@ hostname: LAPTOP-8N2FLHTM
 pid: 28624
 hostname: LAPTOP-8N2FLHTM
 
+2021-12-06 15:39:11,092 ERROR 26728 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:220:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 26728
+hostname: LAPTOP-8N2FLHTM
+
+2021-12-06 16:51:12,627 ERROR 26728 nodejs.ClusterClientNoResponseError: client no response in 1640387ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+name: "ClusterClientNoResponseError"
+pid: 26728
+hostname: LAPTOP-8N2FLHTM
+
