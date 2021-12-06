@@ -1,0 +1,33 @@
+2021-12-03 12:33:16,608 INFO 29568 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57403394ms at 2021-12-04 04:30:00.002
+2021-12-03 12:33:16,608 INFO 29568 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41203392ms at 2021-12-04 00:00:00.000
+2021-12-03 12:33:16,609 INFO 29568 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41204392ms at 2021-12-04 00:00:01.001
+2021-12-03 12:33:16,398 INFO 24024 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 12:33:16,398 INFO 24024 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 12:33:16,398 INFO 24024 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:02:05,182 INFO 28228 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:02:05,182 INFO 28228 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:02:05,183 INFO 28228 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:02:05,347 INFO 16916 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 55674655ms at 2021-12-04 04:30:00.002
+2021-12-03 13:02:05,347 INFO 16916 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 39474653ms at 2021-12-04 00:00:00.000
+2021-12-03 13:02:05,347 INFO 16916 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 39475653ms at 2021-12-04 00:00:01.000
+2021-12-03 13:03:18,314 INFO 28540 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:03:18,315 INFO 28540 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:03:18,315 INFO 28540 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:03:26,567 INFO 23232 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:03:26,568 INFO 23232 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:03:26,568 INFO 23232 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:03:26,731 INFO 29840 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 55593271ms at 2021-12-04 04:30:00.002
+2021-12-03 13:03:26,731 INFO 29840 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 39393269ms at 2021-12-04 00:00:00.000
+2021-12-03 13:03:26,732 INFO 29840 [Timer] C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 39394269ms at 2021-12-04 00:00:01.001
+2021-12-03 13:04:00,107 INFO 28344 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:04:00,107 INFO 28344 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:04:00,107 INFO 28344 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:04:04,324 INFO 25060 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:04:04,324 INFO 25060 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:04:04,324 INFO 25060 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:04:13,138 INFO 8976 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:04:13,138 INFO 8976 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:04:13,138 INFO 8976 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2021-12-03 13:05:53,912 INFO 30376 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2021-12-03 13:05:53,912 INFO 30376 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\clean_log.js
+2021-12-03 13:05:53,912 INFO 30376 [egg-schedule]: register schedule C:\Users\cccatmint_Y\Desktop\docs\docs\egg相关\code\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
