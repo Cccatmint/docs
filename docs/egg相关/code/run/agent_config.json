@@ -1,18 +1,19 @@
 {
   "config": {
     "session": {
-      "maxAge": 86400000,
-      "key": "EGG_SESS",
+      "maxAge": 60000,
+      "key": "session xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
       "httpOnly": true,
       "encrypt": true,
-      "logValue": true
+      "logValue": true,
+      "renew": true
     },
     "security": {
       "domainWhiteList": [],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "type": "ctoken",
         "ignoreJSON": false,
         "useSession": false,
@@ -139,7 +140,7 @@
       "maxDays": 31
     },
     "static": {
-      "prefix": "/public/",
+      "prefix": "/public",
       "dir": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\app\\public",
       "dynamic": true,
       "preload": false,
@@ -150,9 +151,10 @@
       "root": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
-      "defaultViewEngine": "nunjucks",
+      "defaultViewEngine": "",
       "mapping": {
-        ".tpl": "nunjucks"
+        ".tpl": "nunjucks",
+        ".html": "ejs"
       }
     },
     "nunjucks": {
@@ -161,6 +163,14 @@
       "trimBlocks": false,
       "lstripBlocks": false,
       "cache": false
+    },
+    "ejs": {
+      "root": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\app\\view",
+      "cache": false,
+      "debug": false,
+      "compileDebug": true,
+      "delimiter": null,
+      "strict": false
     },
     "env": "local",
     "name": "code",
@@ -186,6 +196,7 @@
       "dependencies": {
         "egg": "^2.32.0",
         "egg-bin": "^4.16.4",
+        "egg-view-ejs": "^2.0.1",
         "egg-view-nunjucks": "^2.3.0"
       }
     },
@@ -286,6 +297,10 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "news": {
+      "pageSize": 5,
+      "serverUrl": "https://hacker-news.firebaseio.com/v0"
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": [],
     "appMiddleware": "~config~appMiddlewares"
@@ -450,6 +465,19 @@
       "from": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\plugin.js",
       "path": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks",
       "version": "2.3.0"
+    },
+    "ejs": {
+      "enable": true,
+      "package": "egg-view-ejs",
+      "name": "ejs",
+      "dependencies": [
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\plugin.js",
+      "path": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs",
+      "version": "2.0.1"
     }
   }
 }

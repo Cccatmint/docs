@@ -1,27 +1,30 @@
 {
   "keys": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
   "view": {
-    "defaultViewEngine": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
     "mapping": {
-      ".tpl": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js"
+      ".tpl": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+      ".html": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js"
     },
     "root": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view\\config\\config.default.js",
     "cache": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view\\config\\config.default.js"
+    "defaultExtension": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view\\config\\config.default.js"
   },
-  "session": {
-    "maxAge": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js",
-    "logValue": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js"
+  "news": {
+    "pageSize": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "serverUrl": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "dir": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js"
   },
   "security": {
-    "domainWhiteList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
+      "enable": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
       "type": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
       "useSession": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
@@ -32,6 +35,9 @@
       "queryName": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js"
     },
+    "domainWhiteList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
       "enable": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
       "value": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js"
@@ -70,6 +76,14 @@
       "ipExceptionList": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "session": {
+    "key": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "maxAge": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "renew": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\config\\config.default.js",
+    "encrypt": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js",
+    "logValue": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
     "shtml": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-security\\config\\config.default.js"
@@ -143,20 +157,20 @@
     "rotateDuration": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-logrotator\\config\\config.default.js",
     "maxDays": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
-  "static": {
-    "prefix": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-static\\config\\config.default.js"
-  },
   "nunjucks": {
     "autoescape": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "throwOnUndefined": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "trimBlocks": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "lstripBlocks": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "cache": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+  },
+  "ejs": {
+    "root": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "cache": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.local.js",
+    "debug": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "compileDebug": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "delimiter": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.default.js",
+    "strict": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg-view-ejs\\config\\config.default.js"
   },
   "env": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js",
   "name": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js",
@@ -181,6 +195,7 @@
     "dependencies": {
       "egg": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js",
       "egg-bin": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-ejs": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "C:\\Users\\cccatmint_Y\\Desktop\\docs\\docs\\egg相关\\code\\node_modules\\egg\\config\\config.default.js"
     }
   },
