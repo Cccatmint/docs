@@ -53,6 +53,7 @@ author.story   // {...} 从 Story 表中查到的文档
 
 ```javascript
 let author = await Author.findOne({ name: 'dora' }).populate('story', 'title -_id');
+// 只显示title 字段，_id是默认带的所以用"-"删除
 
 author.story           // {title: ...}  只返回 title 字段
 author.story.content   // null  其余字段为 null
