@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- three.js  -->
+    <script src="./libs/three/three.js"></script>
+    <!-- 镜头控制 -->
+    <script src="./libs/three/controls/TrackballControls.js"></script>
+    <!-- 方便改变变量的JS库 https://github.com/dataarts/dat.gui -->
+    <script type="text/javascript" src="./libs/util/dat.gui.js"></script>
+    <!-- 帧数 -->
+    <script src="./libs/util/Stats.js"></script>
+    <!-- utils -->
+    <script src="./libs/util/util.js"></script>
+    <!-- demo javaScript -->
+    <script src="./demo/04.使用dat.gui和镜头控制器.js"></script>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="webgl_output"></div>
+    <script>
+
+        // 要做浏览器自适应所以需要现在外面定义
+        let camera
+        let scene
+        let renderer
+
+        init()
+
+        // 浏览器自适应
+        window.addEventListener('resize', onResize, false)
+
+        function onResize() {
+            camera.aspect = window.innerWidth / window.innerHeight
+            camera.updateProjectionMatrix()
+            renderer.setSize(window.innerWidth, window.innerHeight)
+        }
+
+        // show fps
+        function initStats(type) {
+            /*
+                type:  0: fps 1: ms 2: mb 3+: custom
+            */
+            const panelType = type || 0
+            const stats = new Stats()
+            stats.showPanel(panelType)
+            document.body.appendChild(stats.dom)
+            return stats
+        }
+
+    </script>
+
+</body>
+
+</html>
