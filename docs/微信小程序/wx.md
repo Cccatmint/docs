@@ -380,7 +380,167 @@ onPullDownRefresh() {
 
 ### 应用的生命周期
 
+在 `app.js` 中
+```js
+  // app.js
+App({
+  onLaunch() {
+    console.log('小程序初始化完成，全局只触发一次')
+  },
+
+  onShow() {
+    console.log('小程序启动或从后台进入前台显示')
+  },
+  onHide() {
+    console.log('小程序进入后台')
+  }
+})
+```
 
 
 
 ### 页面的生命周期
+
+在页面的`.js文件中`
+```js
+// pages/info/info.js
+Page({
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    console.log('onLoad，监听页面加载,只会触发一次')
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+    console.log('onReady，一个页面只会调用一次')
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+    console.log('onShow')
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+    console.log('onHide')
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+    console.log('onUnload')
+  }
+})
+```
+
+
+## WXS
+WXS(WeiXin Script) 是小程序独有的一套脚本语言,结合WXML 可以构建页面的结构
+典型应用场景是 `过滤器`,经常配合小胡子语法使用
+不能作为组件的事件回调函数
+wxs不能调用js中定义的函数
+wxs不能调用微信的api
+在IOS设备上WXS比JS快2~20倍，但在Android设备上效率无差异
+
+### 与js的关系
+- 有自己的数据类型
+  number、string、boolean、object、function、array、date、regexp
+
+- 不支持类似ES6及以上的语法形式
+  不支持let、const、解构赋值、展开运算符、箭头函数、对象属性简写
+  支持var定义变量
+
+- 遵循CommonJS规范
+  module对象
+  require()函数
+  module.exports对象
+
+
+### 基础语法
+
+#### 内嵌wxs脚本
+可以编写在wxml文件的 `wxs` 标签中，**必须提供module属性**以提供**模块的名称**
+```js
+// msg 定义在页面的js中
+<text>{{ m1.toUpper(msg) }}</text>
+
+<wxs module="m1">
+  module.exports.toUpper = function(str) {
+    return str.toUpperCase()
+  }
+</wxs>
+```
+
+#### 外联的wxs脚本
+必须添加`module`模块名称和 `src`属性必须是**相对路径**
+
+```js
+// utils/tool.wxs
+function toLower(str) {
+  return str.toLowerCase()
+}
+
+module.exports = {
+  toLower: toLower // wxs中不能使用对象简写
+}
+```
+
+```js
+// 页面.wxml
+<text>{{ myTool.toLower(msg) }}</text>
+<wxs src="../../utils/tool.wxs" module="myTool"/>
+```
+
+
+## 自定义组件
+
+
+### 组件的创建
+自定义组件:
+  在根目录中添加components文件夹,新建test文件夹,右击test文件夹选择新建component,之后会自动生成js、json、wxml、wxss 文件
+
+### 引用组件
+
+
+#### 局部引入
+
+在**页面的.json**文件中`usingComponents`以键值对的形式引入
+```json
+{
+  ...
+  "usingComponents": {
+    "my-test":"/components/test/test"
+  },
+  ...
+}
+```
+
+
+#### 全局引入
+
+与页面引入相似，但是在**app.json**文件中引入
+
+
+### 组件与页面的区别
+
+- 组件.json文件需要声明 `component: true`
+- 组件的.js文件中调用的是`Component({})`,页面是`Page({})`
+- 组件的事件处理函数需要定义到`methods`节点中
+
+
+### 组件的样式
+
+组件样式隔离: 
+
+  app.wxss 中的全局样式对组件无效
+
+  只有class选择器会有样式隔离效果,id选择器、属性选择器、标签选择器不受样式隔离影响，所以在组件和引用组建的页面中建议使用class选择器

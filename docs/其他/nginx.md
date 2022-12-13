@@ -470,8 +470,7 @@ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 
 ### 示例
 ```
-
-#user  nobody;
+#user  cccatmint;
 worker_processes  1;
 
 #error_log  logs/error.log;
@@ -480,11 +479,9 @@ worker_processes  1;
 
 #pid        logs/nginx.pid;
 
-
 events {
     worker_connections  1024;
 }
-
 
 http {
     include       mime.types;
@@ -516,7 +513,7 @@ http {
         #access_log  logs/host.access.log  main;
 
         location / {
-           return https://www.cccatmint.fun;
+           return 301 https://$server_name$request_uri;
            index  index.html index.htm;
         }
 
@@ -524,7 +521,7 @@ http {
         #    proxy_pass http://localhost:8899/;
         # }
 
-        #error_page  404              /404.html;
+        # error_page  404              /404.html;
 
         # redirect server error pages to the static page /50x.html
         #
@@ -594,11 +591,21 @@ http {
            root   html;
            index  index.html index.htm;
        }
-	   location /api {
-			proxy_pass http://localhost:8899/;
-        }
-    }
 
+       location /jenkins_test {
+           alias   html/jenkins_test;
+           index index.html;
+           # 404 page match "/jenkins_test/xx"
+           error_page  404   /404_style_red.html;
+       }
+
+       location /api/ {
+			proxy_pass http://localhost:8899;
+       }
+
+       # 404 page match "/xx"
+       error_page  404   /404.html;
+    }
 }
 
 ```
