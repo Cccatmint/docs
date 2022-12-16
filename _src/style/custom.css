@@ -1,0 +1,22 @@
+#coverpage_logo {
+    width: 10%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* github corner */
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+/* logo link */
+.app-name {
+    width: 26%;
+}
+
+.sidebar strong {
+    /* color: #B77915; */
+    /* text-shadow: 1px 1px #B77915; */
+    text-decoration: underline #593e11;
+}   

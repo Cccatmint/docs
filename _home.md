@@ -1,6 +1,7 @@
-# 首页
+# Home Page
 
->gitee仓库
-[![image](https://img.shields.io/badge/Gitee-cccatmint-orange.svg)](https://gitee.com/cccatmint/docs)
+> Project for notes.
 
-> cao9710@outlook.com
+_home.md
+
+Time: {docsify-updated}
