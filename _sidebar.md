@@ -6,9 +6,13 @@
 - [koa2中使用cookie](notes/koa2/koa2中使用cookie.md)
 - [koa2中使用session](notes/koa2/koa2中使用session.md)
 - [koa2中间件](notes/koa2/koa2中间件.md)
+- [koa2使用joi进行参数校验](notes/koa2/koa2使用joi进行参数校验.md)
+- [在koa2项目中使用环境变量](notes/koa2/在koa2项目中使用环境变量.md)
+- [在koa2项目中使用路径别名](notes/koa2/在koa2项目中使用路径别名.md)
 
 * **MongoDB相关**
-- [MongoDB学习](notes/MongoDB相关/MongoDB学习.md)
+- [MongoDB](notes/MongoDB相关/MongoDB.md)
+- [MongoDB学习](notes/MongoDB相关/MongoDB学习.md)
 - [MongoDB账户权限管理](notes/MongoDB相关/MongoDB账户权限管理.md)
 - [Mongoose](notes/MongoDB相关/Mongoose.md)
 - [MongooseSchema格式与数据校验](notes/MongoDB相关/MongooseSchema格式与数据校验.md)
@@ -48,6 +52,7 @@
 - [JWT相关](notes/其他/JWT相关.md)
 - [newDate各种方法的生成的字符串格式](notes/其他/newDate各种方法的生成的字符串格式.md)
 - [nginx](notes/其他/nginx.md)
+- [passport进行身份验证](notes/其他/passport进行身份验证.md)
 - [Promise相关](notes/其他/Promise相关.md)
 - [vite根据文件生成路由表](notes/其他/vite根据文件生成路由表.md)
 - [VSCode代码段添加](notes/其他/VSCode代码段添加.md)
